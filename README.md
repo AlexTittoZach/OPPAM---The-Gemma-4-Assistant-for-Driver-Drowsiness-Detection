@@ -1,4 +1,4 @@
-                                                                      Project Overview
+##                                                                  Project Overview
                                                                                     
 OPPAM is an intelligent, low-latency driver monitoring system (DMS) built specifically for the Safety & Trust track.
 
@@ -6,7 +6,7 @@ By analyzing a live camera feed frame-by-frame, OPPAM monitors the driver’s bi
 fatigue metrics—like prolonged eyelid closure or active yawning—it triggers a persistent audio alarm that repeats indefinitely.
 The system silences itself instantly only when the driver snaps back to an alert, safe condition.
 
-                                                               The Core Problem & Our Impact
+ ##                                                           The Core Problem & Our Impact
                                                                               
 Driver fatigue causes thousands of preventable highway accidents daily. While modern generative AI models possess the visual intelligence 
 to detect drowsiness accurately under varying lighting and angles, running them on real-time video streams usually introduces massive processing lag.
@@ -14,7 +14,7 @@ to detect drowsiness accurately under varying lighting and angles, running them 
 OPPAM bridges this gap. It optimizes the interaction between edge streaming and cloud reasoning to deliver an active accident-prevention tool 
 that responds in decent timeframes.
 
-                                                        Technical Architecture & Engineering Choices
+##                                                   Technical Architecture & Engineering Choices
                                                         
 To ensure the video display stays perfectly smooth while the AI runs in the background, the codebase relies on an Asynchronous Multi-Threaded Architecture:
 
@@ -37,7 +37,7 @@ To ensure the video display stays perfectly smooth while the AI runs in the back
   combined with structured speech loops to ensure non-stop alerts that stop immediately when safety conditions are met.
 
 
-                                                         Real-World Challenges, Calibration, & Edge Failures
+   ##                                                 Real-World Challenges, Calibration, & Edge Failures
   
 * Local Compute Failures: Initial testing used local Ollama instances. However, my i5 test machine lacked the required VRAM,
   causing immediate out-of-memory crashes with both Gemma 4 variants. To meet the deadline, I refactored the pipeline into an
@@ -54,7 +54,7 @@ To ensure the video display stays perfectly smooth while the AI runs in the back
 
 
 
-                                                              Embedded Production Roadmap (Future Plan)
+##                                                     Embedded Production Roadmap (Future Plan)
   
 While the hackathon prototype utilizes a laptop as a development rig, OPPAM’s software footprint is intentionally engineered to run headless 
 on low-power, localized edge hardware.
@@ -64,7 +64,7 @@ micro-camera. The code is designed to run silently as a background system servic
 to the vehicle’s physical dashboard buzzer.
 
 
-                                                                    Why Gemma 4?
+  ##                                                               Why Gemma 4?
                                                                     
 * Alternative to Traditional CV Setups: Instead of relying on traditional computer vision frameworks that use rigid pixel-matching rules
   which frequently fail under changing angles or messy backgrounds—I wanted to test a different approach using deep visual intelligence.
