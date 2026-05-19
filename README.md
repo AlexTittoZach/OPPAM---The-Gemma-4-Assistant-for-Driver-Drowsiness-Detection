@@ -1,3 +1,6 @@
+Link to the Kaggle Writeup: 
+https://kaggle.com/competitions/gemma-4-good-hackathon/writeups/oppam-the-gemma-4-driver-tiredness-detection
+
 ##                                                                  Project Overview
                                                                                     
 OPPAM is an intelligent, low-latency driver monitoring system (DMS) built specifically for the Safety & Trust track.
